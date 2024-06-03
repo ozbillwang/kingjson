@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <time.h>
-#include "../CKingJson.h"
+#include "CKingJson.h"
 
 int main(int argc, char* argv[]) {
     if (argc < 2) {
