@@ -52,22 +52,22 @@ jobs:
     needs: build
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Download Linux build
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: ubuntu-latest-build
           path: ./binaries/linux/
 
       - name: Download macOS build
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: macos-latest-build
           path: ./binaries/macos/
 
       - name: Download Windows build
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: windows-latest-build
           path: ./binaries/windows/
